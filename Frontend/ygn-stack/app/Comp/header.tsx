@@ -15,6 +15,9 @@ export function Header() {
               We made create-ygn-app to do one thing: Streamline the setup of Serverless Architecture apps WITHOUT compromising
               modularity.
             </p>
+            <p className="text-xl max-w-2xl text-[#b6bdf7]">
+             After many years on this tech, we have lots of opinion and insights. we have done our best to encode them into this CLI
+            </p>
         
           </div>
           <div className="flex-1">
