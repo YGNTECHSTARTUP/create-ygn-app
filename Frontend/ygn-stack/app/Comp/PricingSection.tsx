@@ -63,6 +63,7 @@ export default function PricingSection() {
           <div className="hidden md:block w-px bg-zinc-800 h-64 mx-auto"></div>
 
           {/* Right section */}
+          <Link href="https://github.com/sponsors/YGNTECHSTARTUP" target="_blank">
           <div className="flex flex-col-reverse items-center gap-4 container">
             <p className="text-lg mb-2">Buy us some ramen 🍜</p>
             <Button
@@ -84,6 +85,8 @@ export default function PricingSection() {
               />
             </div>
           </div>
+          </Link>
+        
         </div>
       </div>
     </div>
