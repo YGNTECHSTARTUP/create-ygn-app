@@ -11,7 +11,7 @@ export default function LandingPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#0f1120] bg-gradient-to-b from-[#0f1120] to-[#1a1b36] text-white">
+    <div className="min-h-screen bg-[#6c35aa] bg-gradient-to-b from-[#251849] to-[#250e49] text-white">
       {/* Navigation */}
       <header className="container mx-auto flex items-center justify-between py-6">
         <div className="flex items-center gap-8">
@@ -30,7 +30,7 @@ export default function LandingPage() {
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2 bg-[#1a1b36] px-3 py-1 rounded-full">
             <Star className="h-4 w-4 text-white" />
-            <span className="text-sm font-medium">25K</span>
+            <span className="text-sm font-medium">1K</span>
           </div>
           <Link
             href="https://github.com/t3-oss/create-t3-app"
@@ -73,7 +73,7 @@ export default function LandingPage() {
 
         <div className="flex flex-wrap justify-center gap-4 mt-12">
           <Link
-            href="/documentation"
+            href="/Docs"
             className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-full transition-colors"
           >
             Documentation <ExternalLink className="h-4 w-4" />
@@ -89,9 +89,9 @@ export default function LandingPage() {
         </div>
 
         {/* Command Line */}
-        <div className="max-w-2xl mx-auto mt-16">
-          <div className="bg-[#1a1b36] rounded-lg p-4 flex items-center justify-between">
-            <code className="text-white font-mono">npm create t3-app@latest</code>
+        <div className="max-w-2xl mx-auto mt-10 ">
+          <div className="bg-[#2b2c58] rounded-lg p-4 flex items-center justify-between">
+            <code className="text-white font-mono rounded-4xl p-3 shadow-2xl">npm create t3-app@latest</code>
             <button
               onClick={copyCommand}
               className="p-2 hover:bg-white/10 rounded transition-colors"
