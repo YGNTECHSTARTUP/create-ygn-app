@@ -13,7 +13,7 @@ export default function PricingSection() {
           <p className="text-xl">You can still make your contribution!</p>
         </div>
 
-        <div className="md:flex container justify-center items-center -mt-10 ">
+        <div className="md:flex container justify-center items-center -mt-10 mx-auto">
           {/* Left droplet */}
           <div className=" -mt-10 flex sm:mx-auto md:mx-0 md:min-w-0 sm:text-center  sm:min-w-lg justify-center container">
             <Image
@@ -37,14 +37,16 @@ export default function PricingSection() {
             </Button>
             </Link>
           
-
-            <Button
+<Link href="https://x.com/ygndotgg" target="_blank">
+<Button
               variant="outline"
               className="hover:bg-indigo-800 cursor-pointer text-white py-6 px-4 rounded-md flex items-center gap-3 w-full justify-start border-2 border-indigo-400 bg-indigo-900"
             >
               <Twitter className="h-5 w-5" />
               <span className="text-lg">Join us on Twitter</span>
             </Button>
+</Link>
+            
 <Link href="https://discord.gg/hc6bveqT">
 <Button
               variant="outline"

@@ -13,8 +13,8 @@ export default function LandingPage() {
   return (
     <div className="  bg-[#6c35aa] bg-gradient-to-b from-[#251849] to-[#250e49] text-white">
       {/* Navigation */}
-      <header className="container mx-auto flex items-center justify-between py-6">
-        <div className="flex items-center gap-8">
+      <header className="container mx-auto flex items-center justify-between p-6 ">
+        <div className="flex items-center gap-8 ">
           <Link href="/" className="text-3xl font-bold">
             <span className="text-white">YGN</span>
           </Link>
@@ -66,7 +66,7 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <main className="container mx-auto px-4 py-20 text-center">
-        <h1 className="text-5xl md:text-7xl font-bold leading-16 tracking-tight mb-8">
+        <h1 className="text-5xl md:text-7xl font-bold leading-16 md:leading-none tracking-tight  mb-8">
           Build Web Apps Faster with a <span className="text-[#38bdf8]">Scalable</span>,{" "}
           <span className="text-[#818cf8]">Serverless</span> <span className="text-[#c084fc]">Architecture</span>
         </h1>

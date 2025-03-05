@@ -92,7 +92,7 @@ function FeatureCard({ icon, title, iconAlt, description,link,}: FeatureCardProp
   return (
     <Link href={link} target="_blank">
  <div
-      className="rounded-xl p-6 h-full flex flex-col transition-all duration-300 hover:scale-105 cursor-pointer border-2 border-indigo-400 bg-indigo-900"
+      className="rounded-xl p-6 h-full flex flex-col transition-all duration-300 hover:scale-105 cursor-pointer border-2 border-indigo-400  bg-transparent"
     >
       <div className="flex items-start gap-3 mb-3 bg-indigo-800 rounded-xl ">
         <div className="relative w-12 h-12 rounded-lg overflow-hidden bg-white/10 p-2 flex items-center justify-center">
