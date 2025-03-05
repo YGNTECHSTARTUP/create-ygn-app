@@ -19,7 +19,7 @@ export default function LandingPage() {
             <span className="text-white">YGN</span>
           </Link>
           <nav className="hidden md:flex items-center gap-6">
-            <Link href="/docs" className="hover:text-blue-300 transition-colors">
+            <Link href="/Docs" className="hover:text-blue-300 transition-colors">
               Docs
             </Link>
             <Link href="/faq" className="hover:text-blue-300 transition-colors">

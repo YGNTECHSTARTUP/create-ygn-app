@@ -20,10 +20,10 @@ import {
 } from "@/components/ui/sidebar"
 
 const navItems = [
-  { title: "Introduction", url: "/" },
-  { title: "Getting Started", url: "/getting-started" },
-  { title: "Components", url: "/components" },
-  { title: "API Reference", url: "/api-reference" },
+  { title: "Introduction", url: "/Docs" },
+  { title: "Getting Started", url: "/Docs/getting-started" },
+  { title: "Components", url: "/Docs/components" },
+  { title: "API Reference", url: "/Docs/api-reference" },
 ]
 
 export function AppSidebar() {
