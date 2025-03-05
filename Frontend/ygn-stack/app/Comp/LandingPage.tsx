@@ -11,7 +11,7 @@ export default function LandingPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#6c35aa] bg-gradient-to-b from-[#251849] to-[#250e49] text-white">
+    <div className="  bg-[#6c35aa] bg-gradient-to-b from-[#251849] to-[#250e49] text-white">
       {/* Navigation */}
       <header className="container mx-auto flex items-center justify-between py-6">
         <div className="flex items-center gap-8">
@@ -66,12 +66,12 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <main className="container mx-auto px-4 py-20 text-center">
-        <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-8">
+        <h1 className="text-5xl md:text-7xl font-bold leading-16 tracking-tight mb-8">
           Build Web Apps Faster with a <span className="text-[#38bdf8]">Scalable</span>,{" "}
           <span className="text-[#818cf8]">Serverless</span> <span className="text-[#c084fc]">Architecture</span>
         </h1>
 
-        <div className="flex flex-wrap justify-center gap-4 mt-12">
+        <div className="flex flex-wrap justify-center gap-4 ">
           <Link
             href="/Docs"
             className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-full transition-colors"
@@ -89,7 +89,7 @@ export default function LandingPage() {
         </div>
 
         {/* Command Line */}
-        <div className="max-w-2xl mx-auto mt-10 ">
+        <div className="max-w-2xl mx-auto mt-5 ">
           <div className="bg-[#2b2c58] rounded-lg p-4 flex items-center justify-between">
             <code className="text-white font-mono rounded-4xl p-3 shadow-2xl">npm create t3-app@latest</code>
             <button

@@ -6,7 +6,7 @@ import PricingSection from './Comp/PricingSection'
 
 const page = () => {
   return (
-    <div>
+    <div className='overflow-hidden min-w-full'>
 <LandingPage/>
 <Header/>
 <Ecosystem/>

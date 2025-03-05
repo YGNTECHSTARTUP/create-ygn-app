@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function PricingSection() {
   return (
-    <div className="bg-[#6c35aa] bg-gradient-to-b from-[#250e49] to-[#251849] text-white py-16 px-4">
+    <div className="bg-[#6c35aa] bg-gradient-to-b from-[#250e49] to-[#251849] text-white py-16 px-4 -mt-24">
       <div className="max-w-5xl mx-auto ">
         <div className="text-center mb-16 ">
           <h1 className="text-5xl font-bold mb-4">Pricing</h1>
@@ -13,9 +13,9 @@ export default function PricingSection() {
           <p className="text-xl">You can still make your contribution!</p>
         </div>
 
-        <div className="flex container justify-center items-center ">
+        <div className="md:flex container justify-center items-center -mt-10 ">
           {/* Left droplet */}
-          <div className="hidden md:flex justify-center container">
+          <div className=" -mt-10 flex sm:mx-auto md:mx-0 md:min-w-0 sm:text-center  sm:min-w-lg justify-center container">
             <Image
               src="/pricing.svg"
               width={350}
@@ -43,7 +43,7 @@ export default function PricingSection() {
               className="hover:bg-indigo-800 cursor-pointer text-white py-6 px-4 rounded-md flex items-center gap-3 w-full justify-start border-2 border-indigo-400 bg-indigo-900"
             >
               <Twitter className="h-5 w-5" />
-              <span className="text-lg">Join us on Twitter for shitposts</span>
+              <span className="text-lg">Join us on Twitter</span>
             </Button>
 <Link href="https://discord.gg/hc6bveqT">
 <Button
@@ -61,7 +61,7 @@ export default function PricingSection() {
           <div className="hidden md:block w-px bg-zinc-800 h-64 mx-auto"></div>
 
           {/* Right section */}
-          <div className="flex flex-col items-center gap-4 container">
+          <div className="flex flex-col-reverse items-center gap-4 container">
             <p className="text-lg mb-2">Buy us some ramen 🍜</p>
             <Button
               variant="outline"
@@ -72,7 +72,7 @@ export default function PricingSection() {
             </Button>
 
             {/* Right droplet */}
-            <div className="hidden md:block mt-4">
+            <div className="block mt-4">
               <Image
                 src="/sponser.svg"
                 width={150}

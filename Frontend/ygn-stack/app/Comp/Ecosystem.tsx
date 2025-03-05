@@ -3,13 +3,13 @@ import Link from "next/link"
 
 export default function Ecosystem() {
   return (
-    <div className="bg-[#6c35aa] bg-gradient-to-b from-[#251849] to-[#250e49] text-white py-16 px-4 md:py-24">
+    <div className="bg-[#6c35aa] bg-gradient-to-b from-[#251849] to-[#250e49] text-white py-16 px-4 md:py-24 -mt-20">
       <div className="max-w-7xl mx-auto text-center">
         <div className="space-y-4 mb-12">
-          <h1 className="md:text-4xl xl:text-6xl  font-bold text-white">
+          <h1 className="text-xl md:text-2xl xl:text-6xl  font-bold text-white">
           Build Scalable Serverless Apps with the Best of TypeScript, Hono.js, and Cloudflare Worker...
           </h1>
-          <h2 className="md:text-4xl xl:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-pink-400 pb-2">
+          <h2 className="text-xl md:text-2xl xl:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-pink-400 pb-2">
             ...No Bloat, Just Power!
           </h2>
           <p className="text-xl text-indigo-100 max-w-2xl mx-auto">
@@ -21,7 +21,7 @@ export default function Ecosystem() {
           {/* Next.js Card */}
           <FeatureCard
             icon="/nextjs.jpg"
-            title="Framework"
+            title="Framework Of Choice"
             link="https://nextjs.org/"
             iconAlt="Next.js"
             description="Choose any framework you prefer—though for now we recommend Next.js. Its robust ecosystem, SEO-friendly design, and active community make it ideal for scalable applications. Stay tuned as we expand support to more frameworks."

@@ -6,9 +6,9 @@ export function Header() {
   
 
   return (
-    <header className="w-full py-12 bg-[#6c35aa] bg-gradient-to-b from-[#250e49] to-[#251849] ">
+    <header className="w-full py-12 bg-[#6c35aa] bg-gradient-to-b from-[#250e49] to-[#251849] overflow-hidden -mt-16">
       <div className="container mx-auto px-4">
-        <div className="flex sm:flex-col md:flex-row justify-between items-start md:items-center gap-6">
+        <div className=" sm:flex sm:flex-col md:flex-row justify-between items-start md:items-center gap-6">
           <div className="flex-1">
             <h1 className="text-5xl font-bold mb-4 text-[#818cf8]">Edge Runtime From The Start</h1>
             <p className="text-xl max-w-2xl text-[#b6bdf7]">
@@ -21,7 +21,7 @@ export function Header() {
         
           </div>
           <div className="flex-1">
-            <div className="bg-purple-900/50 p-4 rounded-lg border border-purple-800 font-mono text-sm">
+            <div className="bg-purple-900/50 p-7 rounded-lg border border-purple-800 font-mono text-sm">
               <div className="flex gap-2 mb-3">
                 <div className="w-3 h-3 rounded-full bg-red-500"></div>
                 <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
