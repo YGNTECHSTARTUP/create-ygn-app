@@ -1,4 +1,7 @@
+import { Button } from '@/components/ui/button'
+import { Github } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const OpenSourceChallenges = () => {
@@ -15,6 +18,16 @@ const OpenSourceChallenges = () => {
       <div className='justify-center items-center mx-auto flex -mt-16'>
         <Image src="/OpenSource.svg" alt='Open source Challenge' height={800} width={800}/>
       </div>
+      <Link href={"https://github.com/YGNTECHSTARTUP/create-ygn-app/"} target='_blank'>
+      <Button
+              variant="outline"
+              className="hover:bg-indigo-800 cursor-pointer text-white py-6 px-4 rounded-md flex items-center gap-3 justify-center mx-auto border-2 mt-2 border-indigo-400 min-w-md bg-indigo-900"
+            >
+              <Github className="h-5 w-5" />
+              <span className="text-lg">Start Your Contribution Now !</span>
+            </Button>
+      </Link>
+     
       </div>
   )
 }

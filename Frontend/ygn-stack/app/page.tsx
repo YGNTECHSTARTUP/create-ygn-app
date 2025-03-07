@@ -4,6 +4,7 @@ import { Header } from './Comp/header'
 import Ecosystem from './Comp/Ecosystem'
 import PricingSection from './Comp/PricingSection'
 import OpenSourceChallenges from './Comp/OpenSourceChallenges'
+import AnimatedBeamDemo from './Comp/CurrentState'
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
 <Ecosystem/>
 <PricingSection/>
 <OpenSourceChallenges/>
+<AnimatedBeamDemo/>
     </div>
 
   )
