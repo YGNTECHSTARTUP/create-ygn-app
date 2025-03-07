@@ -13,81 +13,74 @@ export default function PricingSection() {
           <p className="text-xl">You can still make your contribution!</p>
         </div>
 
-        <div className="md:flex container justify-center items-center -mt-10 mx-auto">
-          {/* Left droplet */}
-          <div className=" -mt-10 flex sm:mx-auto md:mx-0 md:min-w-0 sm:text-center  sm:min-w-lg justify-center container">
-            <Image
-              src="/pricing.svg"
-              width={350}
-              height={200}
-              alt="YGN"
-              className="opacity-90"
-            />
-          </div>
+        <div className="container mx-auto px-4 py-10 -mt-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+        {/* Left Image */}
+        <div className="flex justify-center -mt-14">
+          <Image
+            src="/pricing.svg"
+            width={350}
+            height={200}
+            alt="YGN"
+            className="opacity-90"
+          />
+        </div>
 
-          {/* Center buttons */}
-          <div className="flex flex-col gap-4 container ">
-            <Link href="https://github.com/YGNTECHSTARTUP/create-ygn-app/" target="_blank" >
+        {/* Center Buttons */}
+        <div className="flex flex-col gap-4 items-center">
+          <Link href="https://github.com/YGNTECHSTARTUP/create-ygn-app/" target="_blank">
             <Button
               variant="outline"
-              className=" hover:bg-indigo-800 cursor-pointer text-white py-6 px-4 rounded-md flex items-center gap-3 w-full justify-start border-2 border-indigo-400 bg-indigo-900"
+              className="hover:bg-indigo-800 cursor-pointer text-white py-6 px-4 rounded-md flex items-center gap-3 w-full border-2 border-indigo-400 bg-indigo-900"
             >
               <Star className="h-5 w-5" />
               <span className="text-lg">Give us a star</span>
             </Button>
-            </Link>
-          
-<Link href="https://x.com/ygndotgg" target="_blank">
-<Button
+          </Link>
+
+          <Link href="https://x.com/ygndotgg" target="_blank">
+            <Button
               variant="outline"
-              className="hover:bg-indigo-800 cursor-pointer text-white py-6 px-4 rounded-md flex items-center gap-3 w-full justify-start border-2 border-indigo-400 bg-indigo-900"
+              className="hover:bg-indigo-800 cursor-pointer text-white py-6 px-4 rounded-md flex items-center gap-3 w-full border-2 border-indigo-400 bg-indigo-900"
             >
               <Twitter className="h-5 w-5" />
               <span className="text-lg">Join us on Twitter</span>
             </Button>
-</Link>
-            
-<Link href="https://discord.gg/hc6bveqT">
-<Button
+          </Link>
+
+          <Link href="https://discord.gg/hc6bveqT" target="_blank">
+            <Button
               variant="outline"
-              className=" hover:bg-indigo-800 cursor-pointer text-white py-6 px-4 rounded-md flex items-center gap-3 w-full justify-start border-2 border-indigo-400 bg-indigo-900"
+              className="hover:bg-indigo-800 cursor-pointer text-white py-6 px-4 rounded-md flex items-center gap-3 w-full border-2 border-indigo-400 bg-indigo-900"
             >
               <DiscordIcon className="h-5 w-5" />
               <span className="text-lg">Join our community</span>
             </Button>
-</Link>
-           
-          </div>
+          </Link>
+        </div>
 
-          {/* Vertical divider */}
-          <div className="hidden md:block w-px bg-zinc-800 h-64 mx-auto"></div>
-
-          {/* Right section */}
+        {/* Right Sponsor Section */}
+        <div className="flex flex-col items-center gap-4 text-center">
+          <p className="text-lg mb-2">Buy us some ramen 🍜</p>
           <Link href="https://github.com/sponsors/YGNTECHSTARTUP" target="_blank">
-          <div className="flex flex-col-reverse items-center gap-4 container">
-            <p className="text-lg mb-2">Buy us some ramen 🍜</p>
             <Button
               variant="outline"
-              className=" hover:bg-indigo-800 cursor-pointer text-white py-6 px-8 rounded-md flex items-center gap-3 border-2 border-indigo-400 bg-indigo-900"
+              className="hover:bg-indigo-800 cursor-pointer text-white py-6 px-8 rounded-md flex items-center gap-3 border-2 border-indigo-400 bg-indigo-900"
             >
               <Gift className="h-5 w-5" />
               <span className="text-lg">Become a sponsor</span>
             </Button>
-
-            {/* Right droplet */}
-            <div className="block mt-4">
-              <Image
-                src="/sponser.svg"
-                width={150}
-                height={200}
-                alt="Drizzle mascot with money"
-                className="opacity-90"
-              />
-            </div>
-          </div>
           </Link>
-        
+          <Image
+            src="/sponser.svg"
+            width={150}
+            height={200}
+            alt="Drizzle mascot with money"
+            className="opacity-90"
+          />
         </div>
+      </div>
+    </div>
       </div>
     </div>
   )
