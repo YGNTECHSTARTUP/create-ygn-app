@@ -110,27 +110,29 @@ export default function AnimatedBeamDemo() {
       </div>
 
       {/* Animated Beams - Only connecting active nodes */}
-<AnimatedBeam containerRef={containerRef} fromRef={div1Ref} toRef={div4Ref as React.RefObject<HTMLDivElement | null>} curvature={-75} endYOffset={-10} />
-<AnimatedBeam containerRef={containerRef} fromRef={div2Ref} toRef={div4Ref as React.RefObject<HTMLDivElement | null>} />
-<AnimatedBeam containerRef={containerRef} fromRef={div3Ref} toRef={div4Ref as React.RefObject<HTMLDivElement | null>} curvature={75} endYOffset={10} />
-<AnimatedBeam containerRef={containerRef} fromRef={div5Ref} toRef={div4Ref as React.RefObject<HTMLDivElement | null>} curvature={-75} endYOffset={-10} reverse />
-<AnimatedBeam containerRef={containerRef} fromRef={div6Ref} toRef={div4Ref as React.RefObject<HTMLDivElement | null>} reverse />
-<AnimatedBeam containerRef={containerRef} fromRef={div7Ref} toRef={div4Ref as React.RefObject<HTMLDivElement | null>} curvature={75} endYOffset={10} reverse />
+      <AnimatedBeam containerRef={containerRef} fromRef={div1Ref} toRef={div4Ref} curvature={-75} endYOffset={-10} />
+<AnimatedBeam containerRef={containerRef} fromRef={div2Ref} toRef={div4Ref} curvature={-50} endYOffset={-5} />
+<AnimatedBeam containerRef={containerRef} fromRef={div3Ref} toRef={div4Ref} curvature={75} endYOffset={10} />
+<AnimatedBeam containerRef={containerRef} fromRef={div5Ref} toRef={div4Ref} curvature={-75} endYOffset={-10} reverse />
+<AnimatedBeam containerRef={containerRef} fromRef={div6Ref} toRef={div4Ref} curvature={-50} endYOffset={-5} reverse />
+<AnimatedBeam containerRef={containerRef} fromRef={div7Ref} toRef={div4Ref} curvature={75} endYOffset={10} reverse />
 
-      {/* No beams for disabled circles */}
-      {/* Dashed Beams for disabled circles */}
-<DisabledBeam containerRef={containerRef} fromRef={div8Ref} toRef={div4Ref} />
-<DisabledBeam containerRef={containerRef} fromRef={div9Ref} toRef={div4Ref} />
-<DisabledBeam containerRef={containerRef} fromRef={div10Ref} toRef={div4Ref} />
-<DisabledBeam containerRef={containerRef} fromRef={div11Ref} toRef={div4Ref} />
-<DisabledBeam containerRef={containerRef} fromRef={div12Ref} toRef={div4Ref} />
-<DisabledBeam containerRef={containerRef} fromRef={div13Ref} toRef={div4Ref} />
-<DisabledBeam containerRef={containerRef} fromRef={div14Ref}  curvature={-75} endYOffset={-10} toRef={div4Ref} />
-<DisabledBeam containerRef={containerRef} fromRef={div15Ref}  curvature={-75} endYOffset={-10} toRef={div4Ref} />
-<DisabledBeam containerRef={containerRef} fromRef={div16Ref} curvature={-75} endYOffset={-10} toRef={div4Ref} />
-<DisabledBeam containerRef={containerRef} fromRef={div17Ref} curvature={-75} endYOffset={-10} toRef={div4Ref} />
-<DisabledBeam containerRef={containerRef} fromRef={div18Ref}  curvature={-75} endYOffset={-10} toRef={div4Ref} />
-<DisabledBeam containerRef={containerRef} fromRef={div19Ref} curvature={-75} endYOffset={-10} toRef={div4Ref} />
+{/* Symmetric Dashed Beams */}
+<DisabledBeam containerRef={containerRef} fromRef={div8Ref} toRef={div4Ref} curvature={-50} />
+<DisabledBeam containerRef={containerRef} fromRef={div9Ref} toRef={div4Ref} curvature={-50} />
+<DisabledBeam containerRef={containerRef} fromRef={div10Ref} toRef={div4Ref} curvature={-50} />
+<DisabledBeam containerRef={containerRef} fromRef={div11Ref} toRef={div4Ref} curvature={-50} />
+<DisabledBeam containerRef={containerRef} fromRef={div12Ref} toRef={div4Ref} curvature={-50} />
+<DisabledBeam containerRef={containerRef} fromRef={div13Ref} toRef={div4Ref} curvature={-50} />
+
+{/* Symmetric Top Curvatures */}
+<DisabledBeam containerRef={containerRef} fromRef={div14Ref} isTop curvature={75} endYOffset={10} toRef={div4Ref} />
+<DisabledBeam containerRef={containerRef} fromRef={div15Ref} isTop curvature={75} endYOffset={10} toRef={div4Ref} />
+<DisabledBeam containerRef={containerRef} fromRef={div16Ref} isTop curvature={75} endYOffset={10} toRef={div4Ref} />
+<DisabledBeam containerRef={containerRef} fromRef={div17Ref} isTop curvature={75} endYOffset={10} toRef={div4Ref} />
+<DisabledBeam containerRef={containerRef} fromRef={div18Ref} isTop curvature={75} endYOffset={10} toRef={div4Ref} />
+<DisabledBeam containerRef={containerRef} fromRef={div19Ref} isTop curvature={75} endYOffset={10} toRef={div4Ref} />
+
 
     </div>
   </div>

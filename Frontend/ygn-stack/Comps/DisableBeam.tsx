@@ -16,6 +16,7 @@ export interface DisabledBeamProps {
   startYOffset?: number
   endXOffset?: number
   endYOffset?: number
+  isTop?: boolean
 }
 
 export const DisabledBeam: React.FC<DisabledBeamProps> = ({
@@ -23,7 +24,7 @@ export const DisabledBeam: React.FC<DisabledBeamProps> = ({
   containerRef,
   fromRef,
   toRef,
-  curvature = 0,
+  curvature = 50,
   pathColor = "gray",
   pathWidth = 2,
   pathOpacity = 0.4,
@@ -31,6 +32,7 @@ export const DisabledBeam: React.FC<DisabledBeamProps> = ({
   startYOffset = 0,
   endXOffset = 0,
   endYOffset = 0,
+  isTop = false,
 }) => {
 
   const [pathD, setPathD] = useState("")
@@ -48,12 +50,20 @@ export const DisabledBeam: React.FC<DisabledBeamProps> = ({
         setSvgDimensions({ width: svgWidth, height: svgHeight })
 
         const startX = rectA.left - containerRect.left + rectA.width / 2 + startXOffset
-        const startY = rectA.top - containerRect.top + rectA.height / 2 + startYOffset
+        let startY = rectA.top - containerRect.top + rectA.height / 2 + startYOffset
         const endX = rectB.left - containerRect.left + rectB.width / 2 + endXOffset
         const endY = rectB.top - containerRect.top + rectB.height / 2 + endYOffset
 
-        const controlY = startY - curvature
-        const d = `M ${startX},${startY} Q ${(startX + endX) / 2},${controlY} ${endX},${endY}`
+        const controlX = (startX + endX) / 2
+        let controlY = (startY + endY) / 2 + Math.abs(curvature) // Default: bends downward
+
+        // **Modify the starting point if `isTop` is active**
+        if (isTop) {
+          startY = Math.abs(curvature) // Move the starting Y position lower
+          controlY = startY + (endY - startY) / 2 // Keep natural arc but shift downward
+        }
+
+        const d = `M ${startX},${startY} Q ${controlX},${controlY} ${endX},${endY}`
         setPathD(d)
       }
     }
@@ -67,7 +77,7 @@ export const DisabledBeam: React.FC<DisabledBeamProps> = ({
     updatePath()
 
     return () => resizeObserver.disconnect()
-  }, [containerRef, fromRef, toRef, curvature, startXOffset, startYOffset, endXOffset, endYOffset])
+  }, [containerRef, fromRef, toRef, curvature, startXOffset, startYOffset, endXOffset, endYOffset, isTop])
 
   return (
     <svg
@@ -84,7 +94,7 @@ export const DisabledBeam: React.FC<DisabledBeamProps> = ({
         strokeWidth={pathWidth}
         strokeOpacity={pathOpacity}
         strokeLinecap="round"
-        strokeDasharray="6 6" // Dashed effect
+        strokeDasharray="6 6"
       />
     </svg>
   )
