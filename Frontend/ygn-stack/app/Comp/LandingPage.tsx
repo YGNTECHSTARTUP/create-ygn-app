@@ -25,15 +25,18 @@ export default function LandingPage() {
             <Link href="/faq" className="hover:text-blue-300 transition-colors">
               FAQ
             </Link>
+            <Link href="/Showcase" className="hover:text-blue-300 transition-colors">
+              Showcase
+            </Link>
           </nav>
         </div>
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2 bg-[#1a1b36] px-3 py-1 rounded-full">
             <Star className="h-4 w-4 text-white" />
-            <span className="text-sm font-medium">1K</span>
+            <span className="text-sm font-medium">1</span>
           </div>
           <Link
-            href="https://github.com/t3-oss/create-t3-app"
+            href="https://github.com/YGNTECHSTARTUP/create-ygn-app/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-full hover:bg-white/10 transition-colors"
@@ -79,7 +82,7 @@ export default function LandingPage() {
             Documentation <ExternalLink className="h-4 w-4" />
           </Link>
           <Link
-            href="https://github.com/t3-oss/create-t3-app"
+            href="https://github.com/YGNTECHSTARTUP/create-ygn-app/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-full transition-colors"
@@ -91,7 +94,7 @@ export default function LandingPage() {
         {/* Command Line */}
         <div className="max-w-2xl mx-auto mt-5 ">
           <div className="bg-[#2b2c58] rounded-lg p-4 flex items-center justify-between">
-            <code className="text-white font-mono rounded-4xl p-3 shadow-2xl">npm create t3-app@latest</code>
+            <code className="text-white font-mono rounded-4xl p-3 shadow-2xl">npm create ygn-app@latest</code>
             <button
               onClick={copyCommand}
               className="p-2 hover:bg-white/10 rounded transition-colors"

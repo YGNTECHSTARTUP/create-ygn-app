@@ -58,7 +58,7 @@ export default function Graph() {
 
   return (
     <div className=" bg-[#6c35aa] bg-gradient-to-b from-[#251849] to-[#250e49] text-white py-16 px-4 -mt-12 p-10 md:shadow-x">
-         <h1 className="text-xl md:text-4xl container text-center items-center justify-center mx-auto font-bold leading-16 md:leading-none tracking-tight  mb-8">
+         <h1 className="text-xl md:text-4xl container text-center items-center justify-center mx-auto font-bold mb-4  ">
    Visualizing the YGN Workflow: <span className="text-[#38bdf8]">   Command-Line Orchestration for Scalable</span>,{" "}
     <span className="text-[#818cf8]">Serverless</span> & <span className="text-[#c084fc]">Edge Deployments</span>
   </h1>

@@ -20,12 +20,13 @@ const OpenSourceChallenges = () => {
       </div>
       <Link href={"https://github.com/YGNTECHSTARTUP/create-ygn-app/"} target='_blank'>
       <Button
-              variant="outline"
-              className="hover:bg-indigo-800 cursor-pointer text-white py-6 px-4 rounded-md flex items-center gap-3 justify-center mx-auto border-2 mt-2 border-indigo-400 min-w-md bg-indigo-900"
-            >
-              <Github className="h-5 w-5" />
-              <span className="text-lg">Start Your Contribution Now !</span>
-            </Button>
+  variant="outline"
+  className="hover:bg-indigo-800 cursor-pointer text-white py-6 px-4 rounded-md flex items-center justify-center mx-auto border-2 mt-2 border-indigo-400 bg-indigo-900 w-full max-w-xs sm:max-w-md"
+>
+  <Github className="h-5 w-5 mr-2" />
+  <span className="text-lg">Start Your Contribution Now!</span>
+</Button>
+
       </Link>
      
       </div>
