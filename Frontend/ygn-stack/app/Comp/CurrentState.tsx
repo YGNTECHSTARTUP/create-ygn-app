@@ -125,6 +125,12 @@ export default function AnimatedBeamDemo() {
 <DisabledBeam containerRef={containerRef} fromRef={div11Ref} toRef={div4Ref} />
 <DisabledBeam containerRef={containerRef} fromRef={div12Ref} toRef={div4Ref} />
 <DisabledBeam containerRef={containerRef} fromRef={div13Ref} toRef={div4Ref} />
+<DisabledBeam containerRef={containerRef} fromRef={div14Ref}  curvature={-75} endYOffset={-10} toRef={div4Ref} />
+<DisabledBeam containerRef={containerRef} fromRef={div15Ref}  curvature={-75} endYOffset={-10} toRef={div4Ref} />
+<DisabledBeam containerRef={containerRef} fromRef={div16Ref} curvature={-75} endYOffset={-10} toRef={div4Ref} />
+<DisabledBeam containerRef={containerRef} fromRef={div17Ref} curvature={-75} endYOffset={-10} toRef={div4Ref} />
+<DisabledBeam containerRef={containerRef} fromRef={div18Ref}  curvature={-75} endYOffset={-10} toRef={div4Ref} />
+<DisabledBeam containerRef={containerRef} fromRef={div19Ref} curvature={-75} endYOffset={-10} toRef={div4Ref} />
 
     </div>
   </div>
