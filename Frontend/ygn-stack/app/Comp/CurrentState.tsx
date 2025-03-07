@@ -29,7 +29,7 @@ const Circle = forwardRef<HTMLDivElement, { className?: string; children?: React
 
 Circle.displayName = "Circle"
 
-export default function AnimatedBeamDemo() {
+export default function Graph() {
   const containerRef = useRef<HTMLDivElement>(null)
 
   // Active circles
