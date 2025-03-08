@@ -6,7 +6,7 @@ import { toast } from "sonner"
 export default function LandingPage() {
   const copyCommand = () => {
     
-    navigator.clipboard.writeText("npm create t3-app@latest")
+    navigator.clipboard.writeText("npm create ygn-app@latest")
     toast("Copied to Clipboard")
   }
 
